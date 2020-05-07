@@ -7,7 +7,12 @@
 
   &__mask {
     position: absolute;
-    background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,0.5));
+    background-image:
+      linear-gradient(
+        to top,
+        rgba(255, 0, 0, 0),
+        rgba(0, 0, 0, 0.5)
+      );
     top: 0;
     left: 0;
     width: 100%;
@@ -16,8 +21,8 @@
   }
 
   &__title {
-    color: $black;
     @include font-size(32);
+
     flex-basis: 0;
     flex-grow: 1;
     color: $white;
@@ -42,7 +47,8 @@
   }
 
   &__icon {
-    color: $white;
     @include font-size(32);
+
+    color: $white;
   }
 }
