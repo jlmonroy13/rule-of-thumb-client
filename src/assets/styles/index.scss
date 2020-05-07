@@ -1,0 +1,16 @@
+// Settings
+@import 'settings/variables';
+
+// Bootstrap library
+@import 'bootstrap/scss/bootstrap.scss';
+
+// Core
+@import 'core/core';
+
+// Helpers
+@import 'helpers/helpers';
+
+
+.app {
+  color: red;
+}

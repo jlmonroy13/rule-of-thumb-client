@@ -1,0 +1,131 @@
+$wrapper: 1026px;
+
+// Colors
+$athens-gray-dark: #e0e3e8;
+$athens-gray: #f2f4f7;
+$black: #000;
+$chablis: #fff4f4;
+$dove-gray: #666;
+$geyser: #d3d9e0;
+$mercury: #eae9e9;
+$mine-shaft: #333;
+$redOrange: #fd3232;
+$shuttle-gray: #646777;
+$tower-gray: #b1c3c8;
+$transparent: transparent;
+$white: #fff;
+$wild-sand: #f5f5f5;
+$international-orange: #ff5800;
+
+$border-radius: 0.25rem;
+
+$brand-success: #19ba9c !default;
+$brand-info: #3697da !default;
+$brand-warning: #f5a623 !default;
+$brand-danger: #e84c3e !default;
+
+$main-color: $international-orange;
+$tab-hover-bg-color: $mercury;
+$tab-active-bg-color: $chablis;
+
+//Body
+$body-bg: $white !default;
+$body-color: $dove-gray !default;
+
+// Fonts
+$font-family-sans-serif: 'Roboto', 'Helvetica Neue', helvetica, arial,
+  'Lucida Grande', sans-serif;
+
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+
+$font-size-base: 1rem !default; //16px;
+$font-size-larger: $font-size-base * 1.25 !default; //20px;
+$font-size-large: $font-size-base * 1.125 !default; //18px;
+$font-size-small: $font-size-base * 0.875 !default; //14px;
+$font-size-smaller: $font-size-base * 0.75 !default; //12px;
+$font-size-xsmall: $font-size-base * 0.625 !default; //10px;
+$font-size-xsmaller: $font-size-base * 0.5 !default; //8px;
+
+$h1-font-size: $font-size-base * 2.125 !default; //34px
+$h2-font-size: $font-size-base * 2 !default; //32px
+$h3-font-size: $font-size-base * 1.875 !default; //30px
+$h4-font-size: $font-size-base * 1.5 !default; //24px
+$h5-font-size: $font-size-base * 1.375 !default; //22px
+$h6-font-size: $font-size-base * 1.25 !default; //20px;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  2xs: 375px,
+  3xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  2xl: 1440px,
+  3xl: 1600px,
+) !default;
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25,
+    ),
+    2: (
+      $spacer * 0.5,
+    ),
+    3: (
+      $spacer * 0.75,
+    ),
+    4: $spacer,
+    5: (
+      $spacer * 1.5,
+    ),
+    6: (
+      $spacer * 2,
+    ),
+    7: (
+      $spacer * 2.5,
+    ),
+    8: (
+      $spacer * 3,
+    ),
+    9: (
+      $spacer * 3.5,
+    ),
+    10: (
+      $spacer * 4,
+    ),
+    11: (
+      $spacer * 4.5,
+    ),
+    12: (
+      $spacer * 5,
+    ),
+  ),
+  $spacers
+);
+
+//Forms
+// $input-color: $dove-gray;
+// $input-border-color: $alto;
+// $input-group-addon-bg: $white;
+$input-border-radius: 0.25rem;
+// $input-placeholder-color: $dove-gray;
+$input-btn-padding-y: 0.282rem;
+$input-btn-padding-x: 0.75rem;
+$input-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+  background-color 0.15s ease-in-out !default;
+
+//Cards
+$card-border-width: 0;
+$card-border-color: $transparent;
+$card-border-radius: 8px;
+$card-spacer-x: 1.5rem;
+$card-spacer-y: 15px;
+$card-spacer-x: 20px;
