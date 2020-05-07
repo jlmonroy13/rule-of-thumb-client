@@ -9,20 +9,20 @@
     align-items: center;
 
     &-title {
-      font-size: 3.75rem;
+      @include font-size(60);
       line-height: 60px;
       font-weight: 400;
       margin-bottom: 20px;
     }
 
     &-description {
-      font-size: 1.312rem;
+      @include font-size(21);
       line-height: 24px;
       font-weight: 300;
     }
 
     &-link {
-      font-size: 0.875rem;
+      @include font-size(14);
       color: $white;
       text-decoration: underline;
 
@@ -63,7 +63,7 @@
     &-footer-right {
       flex-grow: 1;
       background-color: rgba($white, 0.7);
-      font-size: 2.31rem;
+      @include font-size(37);
       line-height: 50px;
       font-weight: 300;
       padding: 0 20px;

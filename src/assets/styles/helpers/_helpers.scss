@@ -66,6 +66,11 @@ $custom-colors: map-merge(
   @include bg-variant('.bg-#{$color}', $value);
 }
 
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
 .flex-basis-0 {
   flex-basis: 0;
 }

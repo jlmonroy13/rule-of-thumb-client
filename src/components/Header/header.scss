@@ -17,7 +17,7 @@
 
   &__title {
     color: $black;
-    font-size: 2rem;
+    @include font-size(32);
     flex-basis: 0;
     flex-grow: 1;
     color: $white;
@@ -43,6 +43,6 @@
 
   &__icon {
     color: $white;
-    font-size: 2rem;
+    @include font-size(32);
   }
 }
