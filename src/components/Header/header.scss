@@ -1,0 +1,48 @@
+.header {
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__mask {
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,0.3));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 86px;
+    z-index: 1;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 32px;
+    flex-basis: 0;
+    flex-grow: 1;
+    color: $white;
+    z-index: 2;
+  }
+
+  &__nav {
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+
+    &-item {
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &__icon {
+    color: $white;
+    font-size: 32px;
+  }
+}

@@ -6,9 +6,11 @@
 
 // Core
 @import 'core/core';
+@import 'core/fonts';
 
 // Components
-@import 'components/icon';
+@import '../../components/Icon/icon.scss';
+@import '../../components/Header/header.scss';
 
 // Helpers
 @import 'helpers/helpers';
