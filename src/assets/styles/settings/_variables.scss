@@ -4,7 +4,8 @@ $wrapper: 1026px;
 $transparent: transparent;
 $black: #000;
 $white: #fff;
-
+$java: #1cbbb4;
+$my-sin: #ffac1d;
 
 $border-radius: 0.25rem;
 
@@ -13,14 +14,15 @@ $brand-info: #3697da !default;
 $brand-warning: #f5a623 !default;
 $brand-danger: #e84c3e !default;
 
-$main-color: $black;
+$main-color: $java;
+$secondary-color: $my-sin;
 
 //Body
 $body-bg: $white !default;
 $body-color: $black !default;
 
 // Fonts
-$font-family-sans-serif: 'Roboto', 'Helvetica Neue', helvetica, arial,
+$font-family-sans-serif: 'Lato', 'Helvetica Neue', helvetica, arial,
   'Lucida Grande', sans-serif;
 
 $font-weight-medium: 500;

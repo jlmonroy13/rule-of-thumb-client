@@ -30,6 +30,8 @@ $custom-colors: map-merge(
     'white': $white,
     'black': $black,
     'transparent': $transparent,
+    'main-color': $main-color,
+    'secondary-color': $secondary-color,
   ),
   $custom-colors
 );
