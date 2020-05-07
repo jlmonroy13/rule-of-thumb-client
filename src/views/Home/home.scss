@@ -1,0 +1,72 @@
+.home {
+  &__main {
+    height: 100vh;
+    background-image: url('../../assets/images/pope.jpg');
+    background-size: cover;
+    position: relative;
+    padding-top: 86px;
+    display: flex;
+    align-items: center;
+
+    &-title {
+      font-size: 3.75rem;
+      line-height: 60px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    &-description {
+      font-size: 1.312rem;
+      line-height: 24px;
+      font-weight: 300;
+    }
+
+    &-link {
+      font-size: 0.875rem;
+      color: $white;
+      text-decoration: underline;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    &-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+    }
+
+    &-footer-left {
+      width: 35%;
+      background-color: rgba($black, 0.3);
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 20px;
+      align-items: center;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        right: -12px;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 0 8px 12px;
+        border-color: transparent transparent transparent rgba($black, 0.3);
+      }
+    }
+
+    &-footer-right {
+      flex-grow: 1;
+      background-color: rgba($white, 0.7);
+      font-size: 2.31rem;
+      line-height: 50px;
+      font-weight: 300;
+      padding: 0 20px;
+    }
+  }
+}
