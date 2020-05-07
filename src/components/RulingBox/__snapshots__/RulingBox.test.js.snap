@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RulingBox /> Should render and match the snapshot 1`] = `
+<div
+  class="ruling-box"
+>
+  <span
+    class="text-small"
+  >
+    What's your opinion on
+  </span>
+  <h1
+    class="ruling-box__title"
+  >
+    Pope Francis?
+  </h1>
+  <p
+    class="ruling-box__description"
+  >
+    He is talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)
+  </p>
+  <div
+    class="mb-6"
+  >
+    <svg
+      class="icon icon-wikipedia mr-1"
+      data-testid="icon-component"
+    >
+      <use
+        xlink:href="#icon-wikipedia"
+      />
+    </svg>
+    <a
+      class="ruling-box__link"
+      href="https://en.wikipedia.org/wiki/Catholic_Church_sexual_abuse_cases"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      More information
+    </a>
+  </div>
+  <span
+    class="font-weight-bold text-larger"
+  >
+    What's Your Verdict?
+  </span>
+  <div
+    class="ruling-box__buttons"
+  >
+    <button
+      class="ruling-box__button"
+    >
+      <svg
+        class="icon icon-thumb ruling-box__icon ruling-box__icon--up"
+        data-testid="icon-component"
+      >
+        <use
+          xlink:href="#icon-thumb"
+        />
+      </svg>
+    </button>
+    <button
+      class="ruling-box__button ruling-box__button--yellow"
+    >
+      <svg
+        class="icon icon-thumb ruling-box__icon"
+        data-testid="icon-component"
+      >
+        <use
+          xlink:href="#icon-thumb"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

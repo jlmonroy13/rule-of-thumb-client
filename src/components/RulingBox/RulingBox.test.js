@@ -1,6 +1,6 @@
 /**
  *
- * Tests for ProgressBar
+ * Tests for RulingBox
  *
  * @see https://github.com/react-boilerplate/react-boilerplate/tree/master/docs/testing
  *
@@ -9,18 +9,18 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import ProgressBar from './index';
+import RulingBox from './index';
 
 const props = {
-  label: 'closing in',
-  value: 22,
-  valueLabel: 'days',
+  title: 'Pope Francis?',
+  description: 'He is talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)',
+  wikiUrl: 'https://en.wikipedia.org/wiki/Catholic_Church_sexual_abuse_cases'
 };
 
-describe('<ProgressBar />', () => {
+describe('<RulingBox />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error');
-    render(<ProgressBar {...props} />);
+    render(<RulingBox {...props} />);
     expect(spy).not.toHaveBeenCalled();
   });
 
@@ -36,7 +36,7 @@ describe('<ProgressBar />', () => {
   it('Should render and match the snapshot', () => {
     const {
       container: { firstChild },
-    } = render(<ProgressBar {...props} />);
+    } = render(<RulingBox {...props} />);
     expect(firstChild).toMatchSnapshot();
   });
 });

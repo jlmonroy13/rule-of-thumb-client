@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressBar /> Should render and match the snapshot 1`] = `
+<div
+  class="d-flex"
+>
+  <div
+    class="progress-bar__lapsed"
+  >
+    <span
+      class="text-white text-uppercase text-small"
+    >
+      closing in
+    </span>
+  </div>
+  <div
+    class="progress-bar__remaining"
+  >
+    <b
+      class="mr-2"
+    >
+      22
+    </b>
+    <span>
+      days
+    </span>
+  </div>
+</div>
+`;
