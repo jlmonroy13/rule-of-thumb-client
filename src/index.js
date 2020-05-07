@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+
+import IconsLibrary from 'components/Icon/IconsLibrary';
+import App from 'components/App';
+
 import * as serviceWorker from './serviceWorker';
 
 import './assets/styles/index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
+    <IconsLibrary />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
