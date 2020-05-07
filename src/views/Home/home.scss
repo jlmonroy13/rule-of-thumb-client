@@ -8,29 +8,6 @@
     display: flex;
     align-items: center;
 
-    &-title {
-      @include font-size(60);
-      line-height: 60px;
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
-
-    &-description {
-      @include font-size(21);
-      line-height: 24px;
-      font-weight: 300;
-    }
-
-    &-link {
-      @include font-size(14);
-      color: $white;
-      text-decoration: underline;
-
-      &:hover {
-        color: $white;
-      }
-    }
-
     &-footer {
       position: absolute;
       bottom: 0;

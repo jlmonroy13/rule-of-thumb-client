@@ -8,6 +8,29 @@
   bottom: 80px;
   max-width: 500px;
 
+  &__title {
+    @include font-size(60);
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    @include font-size(21);
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  &__link {
+    @include font-size(14);
+    color: $white;
+    text-decoration: underline;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
   &__buttons {
     position: absolute;
     bottom: -80px;
