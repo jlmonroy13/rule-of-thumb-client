@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from 'components/Header';
 import RulingBox from 'components/RulingBox';
+import ProgressBar from 'components/ProgressBar';
 
 const Home = () => (
   <div className="position-relative">
@@ -15,13 +16,7 @@ const Home = () => (
         />
       </div>
       <div className="home__main-footer">
-        <div className="home__main-footer-left">
-          <span className="text-white text-uppercase text-small">closing in</span>
-        </div>
-        <div className="home__main-footer-right">
-          <b className="mr-2">22</b>
-          <span>days</span>
-        </div>
+        <ProgressBar label="closing in" value={22} valueLabel="days" />
       </div>
     </section>
   </div>
