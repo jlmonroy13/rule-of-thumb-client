@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> Should render and match the snapshot 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="footer"
+  >
+    <nav
+      class="footer__nav"
+    >
+      <a
+        class="footer__nav-item"
+        href="/terms-and-conditions"
+      >
+        Terms and Conditions
+      </a>
+      <a
+        class="footer__nav-item"
+        href="/privacy-policy"
+      >
+        Privacy Policy
+      </a>
+      <a
+        class="footer__nav-item"
+        href="/contact-us"
+      >
+        Contact us
+      </a>
+    </nav>
+    <div
+      class="footer__social-networks"
+    >
+      <span
+        class="footer__text"
+      >
+        Follow Us
+      </span>
+      <a
+        href="https://www.facebook.com/pages/category/Community/FB-Rules-of-Thumb-318882558219309/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <svg
+          class="icon icon-facebook footer__icon footer__icon--facebook"
+          data-testid="icon-component"
+        >
+          <use
+            xlink:href="#icon-facebook"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://twitter.com/ruleofthumbbiz"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <svg
+          class="icon icon-twitter footer__icon footer__icon--twitter"
+          data-testid="icon-component"
+        >
+          <use
+            xlink:href="#icon-twitter"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+`;

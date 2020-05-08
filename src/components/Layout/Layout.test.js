@@ -1,6 +1,6 @@
 /**
  *
- * Tests for Footer
+ * Tests for Layout
  *
  * @see https://github.com/react-boilerplate/react-boilerplate/tree/master/docs/testing
  *
@@ -10,16 +10,18 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import Footer from './index';
+import Home from 'views/Home';
 
-const props = {};
+import Layout from './index';
 
-describe('<Footer />', () => {
+describe('<Layout />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error');
     render(
       <Router>
-        <Footer {...props} />
+        <Layout>
+          <Home />
+        </Layout>
       </Router>,
     );
     expect(spy).not.toHaveBeenCalled();
@@ -30,7 +32,9 @@ describe('<Footer />', () => {
       container: { firstChild },
     } = render(
       <Router>
-        <Footer {...props} />
+        <Layout>
+          <Home />
+        </Layout>
       </Router>,
     );
     expect(firstChild).toMatchSnapshot();

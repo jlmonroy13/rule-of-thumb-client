@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NoMatch /> Should render and match the snapshot 1`] = `
+<div
+  class="d-flex justify-content-center align-items-center w-100 vh-100"
+>
+  <div
+    class="text-center"
+  >
+    <h1>
+      Page not found
+    </h1>
+    <p>
+      The page you were looking for was moved or doesn’t exist.
+    </p>
+    <a
+      aria-current="page"
+      class="active"
+      href="/"
+    >
+      Go to Homepage
+    </a>
+  </div>
+</div>
+`;

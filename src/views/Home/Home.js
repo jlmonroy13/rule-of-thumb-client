@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 
-import Header from 'components/Header';
 import RulingBox from 'components/RulingBox';
 import ProgressBar from 'components/ProgressBar';
 import InfoBox from 'components/InfoBox';
 import RulingCard from 'components/RulingCard';
-import Footer from 'components/Footer';
+import Layout from 'components/Layout';
 
 import kanyePhoto from 'assets/images/west.jpg';
 
@@ -69,8 +68,7 @@ const Home = () => {
   );
 
   return (
-    <div className="position-relative">
-      <Header />
+    <Layout>
       <section className="home__main">
         <h1 className="d-none">Last Ruling</h1>
         <div className="container">
@@ -105,8 +103,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 

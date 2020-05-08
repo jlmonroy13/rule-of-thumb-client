@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import Icon from 'components/Icon';
 
-import { PAST_TRIALS, HOW_IT_WORKS, LOGIN } from 'constants/pathNames';
+import { PAST_TRIALS, HOW_IT_WORKS, LOGIN, HOME } from 'constants/pathNames';
 
 const Header = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -15,7 +15,9 @@ const Header = () => {
       <div className="header__mask" />
       <div className="container">
         <div className="d-flex justify-content-between align-items-center">
-          <h1 className="header__title">Rule of Thumb.</h1>
+          <NavLink to={HOME} className="header__title">
+            <h1>Rule of Thumb.</h1>
+          </NavLink>
           <nav className={`header__nav ${showMobileNav ? 'is-active' : ''}`}>
             <button
               className="d-block d-md-none mb-4"

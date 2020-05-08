@@ -24,8 +24,9 @@ const Footer = () => (
         </NavLink>
       </nav>
       <div className="footer__social-networks">
-        <spa className="footer__text">Follow Us</spa>
+        <span className="footer__text">Follow Us</span>
         <a
+          rel="noopener noreferrer"
           href="https://www.facebook.com/pages/category/Community/FB-Rules-of-Thumb-318882558219309/"
           target="_blank"
         >
@@ -34,7 +35,11 @@ const Footer = () => (
             className="footer__icon footer__icon--facebook"
           />
         </a>
-        <a href="https://twitter.com/ruleofthumbbiz" target="_blank">
+        <a
+          rel="noopener noreferrer"
+          href="https://twitter.com/ruleofthumbbiz"
+          target="_blank"
+        >
           <Icon name="twitter" className="footer__icon footer__icon--twitter" />
         </a>
       </div>

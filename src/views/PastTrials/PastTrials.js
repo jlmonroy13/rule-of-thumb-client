@@ -1,12 +1,19 @@
 import React from 'react';
 
+import Layout from 'components/Layout';
+
 const PastTrials = () => (
-  <div className="d-flex justify-content-center align-items-center w-100 vh-100">
-    <div className="text-center">
-      <h1>Past trials</h1>
-      <span>Coming soon...</span>
+  <Layout>
+    <div
+      className="d-flex justify-content-center align-items-center w-100"
+      style={{ height: 'calc(100vh - 83px)' }}
+    >
+      <div className="text-center">
+        <h1>Past trials</h1>
+        <span>Coming soon...</span>
+      </div>
     </div>
-  </div>
+  </Layout>
 );
 
 export default PastTrials;
