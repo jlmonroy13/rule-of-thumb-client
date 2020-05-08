@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RulingCard /> Should render and match the snapshot 1`] = `
+<div
+  class="ruling-card"
+  style="background-image: url(west.jpg);"
+>
+  <div
+    class="ruling-card__mask"
+  />
+  <div
+    class="ruling-card__body"
+  >
+    <div
+      class="position-relative"
+    >
+      <span
+        class="ruling-card__icon"
+      >
+        <svg
+          class="icon icon-thumb ruling-card__thumb"
+          data-testid="icon-component"
+        >
+          <use
+            xlink:href="#icon-thumb"
+          />
+        </svg>
+      </span>
+      <h2
+        class="ruling-card__title"
+      >
+        Kanye West
+      </h2>
+    </div>
+    <span
+      class="text-small mb-3 d-block"
+    >
+      <b>
+        2020/02/25
+      </b>
+       in 
+      Entertaiment
+    </span>
+    <p
+      class="ruling-card__description"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.
+    </p>
+    <div
+      class="d-flex align-items-center"
+    >
+      <button
+        class="ruling-card__thumb-btn mr-2"
+      >
+        <svg
+          class="icon icon-thumb ruling-card__thumb ruling-card__thumb--up"
+          data-testid="icon-component"
+        >
+          <use
+            xlink:href="#icon-thumb"
+          />
+        </svg>
+      </button>
+      <button
+        class="ruling-card__thumb-btn mr-3"
+      >
+        <svg
+          class="icon icon-thumb ruling-card__thumb"
+          data-testid="icon-component"
+        >
+          <use
+            xlink:href="#icon-thumb"
+          />
+        </svg>
+      </button>
+      <button
+        class="ruling-card__button"
+      >
+        Vote now
+      </button>
+    </div>
+  </div>
+  <div
+    class="ruling-card__footer"
+  >
+    <div
+      class="ruling-card__footer-percentage ruling-card__footer-percentage--up"
+    >
+      <svg
+        class="icon icon-thumb ruling-card__footer-icon"
+        data-testid="icon-component"
+      >
+        <use
+          xlink:href="#icon-thumb"
+        />
+      </svg>
+      <span>
+        64
+        %
+      </span>
+    </div>
+    <div
+      class="ruling-card__footer-percentage"
+      style="width: 36%;"
+    >
+      <span
+        class="mr-2"
+      >
+        36
+        %
+      </span>
+      <svg
+        class="icon icon-thumb "
+        data-testid="icon-component"
+      >
+        <use
+          xlink:href="#icon-thumb"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;

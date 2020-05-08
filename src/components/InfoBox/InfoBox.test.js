@@ -11,7 +11,13 @@ import { render } from '@testing-library/react';
 
 import InfoBox from './index';
 
-const props = {};
+const props = {
+  title: 'Be counted',
+  subtitle: 'Speak out. Be heard.',
+  message:
+    'Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It&lsquo;s easy: You share your opinion, we analyze and put the data in a public report.',
+  onClose: () => {},
+};
 
 describe('<InfoBox />', () => {
   it('Expect to not log errors in console', () => {

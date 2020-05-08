@@ -9,9 +9,20 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
+import kanyePhoto from 'assets/images/west.jpg';
+
 import RulingCard from './index';
 
-const props = {};
+const props = {
+  name: 'Kanye West',
+  imageUrl: kanyePhoto,
+  startDate: '2020/02/25',
+  category: 'Entertaiment',
+  description:
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.',
+  upThumbs: 64,
+  downThumbs: 36,
+};
 
 describe('<RulingCard />', () => {
   it('Expect to not log errors in console', () => {
