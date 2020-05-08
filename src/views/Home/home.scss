@@ -15,4 +15,14 @@
       width: 100%;
     }
   }
+
+  &__rulings {
+    padding: 30px 0;
+
+    &-title {
+      @include font-size(40);
+
+      font-weight: 300;
+    }
+  }
 }
