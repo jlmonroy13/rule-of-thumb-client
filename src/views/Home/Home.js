@@ -93,8 +93,15 @@ const Home = () => {
               onClose={onCloseInfoBox}
             />
           )}
-          <h1 className="home__votes-title mb-5">Previous Rulings</h1>
+          <h1 className="home__rulings-title mb-7">Previous Rulings</h1>
           <div className="row">{rulings.map(onRenderRulings)}</div>
+          <div className="home__advise">
+            <div className="home__advise-mask" />
+            <p className="home__advise-text">
+              Is there anyone else you would want us to add?
+            </p>
+            <button className="home__advise-btn">Submit a Name</button>
+          </div>
         </section>
       </div>
     </div>
