@@ -5,11 +5,15 @@
   "dependencies": {
     "@babel/preset-react": "^7.9.4",
     "bootstrap": "^4.4.1",
+    "date-fns": "^2.13.0",
     "node-sass": "^4.14.1",
+    "ramda": "^0.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-storage-hooks": "^4.0.1",
+    "react-toastify": "^6.0.0-rc.2-1"
   },
   "scripts": {
     "start": "react-scripts start",

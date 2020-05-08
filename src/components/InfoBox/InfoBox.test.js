@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 
 import InfoBox from './index';
 
@@ -16,7 +16,7 @@ const props = {
   subtitle: 'Speak out. Be heard.',
   message:
     'Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It&lsquo;s easy: You share your opinion, we analyze and put the data in a public report.',
-  onClose: () => {},
+  onClose: jest.fn(),
 };
 
 describe('<InfoBox />', () => {
@@ -31,5 +31,14 @@ describe('<InfoBox />', () => {
       container: { firstChild },
     } = render(<InfoBox {...props} />);
     expect(firstChild).toMatchSnapshot();
+  });
+
+  it('Should call onClose function when user clicks close button', () => {
+    render(<InfoBox {...props} />);
+
+    const closeButton = screen.getByTestId('info-box-close-button');
+    fireEvent.click(closeButton);
+
+    expect(props.onClose).toHaveBeenCalled();
   });
 });
