@@ -6,54 +6,9 @@ import InfoBox from 'components/InfoBox';
 import RulingCard from 'components/RulingCard';
 import Layout from 'components/Layout';
 
-import kanyePhoto from 'assets/images/west.jpg';
+import data from 'constants/data.json';
 
-const rulings = [
-  {
-    id: '1',
-    name: 'Kanye West',
-    imageUrl: kanyePhoto,
-    startDate: '2020/02/25',
-    category: 'Entertaiment',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.',
-    upThumbs: 64,
-    downThumbs: 36,
-  },
-  {
-    id: '2',
-    name: 'Kanye West',
-    imageUrl: kanyePhoto,
-    startDate: '2020/02/25',
-    category: 'Entertaiment',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.',
-    upThumbs: 64,
-    downThumbs: 36,
-  },
-  {
-    id: '3',
-    name: 'Kanye West',
-    imageUrl: kanyePhoto,
-    startDate: '2020/02/25',
-    category: 'Entertaiment',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.',
-    upThumbs: 64,
-    downThumbs: 36,
-  },
-  {
-    id: '4',
-    name: 'Kanye West',
-    imageUrl: kanyePhoto,
-    startDate: '2020/02/25',
-    category: 'Entertaiment',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.',
-    upThumbs: 64,
-    downThumbs: 36,
-  },
-];
+const { rulings } = data;
 
 const Home = () => {
   const [showInfoBox, setShowInfoBox] = useState(true);

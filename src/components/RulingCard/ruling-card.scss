@@ -39,6 +39,7 @@ $class-name: '.ruling-card';
     line-height: 45px;
     font-weight: 400;
     margin: 0;
+    max-width: 430px;
   }
 
   &__description {
@@ -88,20 +89,22 @@ $class-name: '.ruling-card';
   &__footer {
     display: flex;
     color: $white;
-    align-items: center;
     z-index: 2;
+    min-height: 51px;
 
     &-percentage {
       @include font-size(29);
 
       display: flex;
       align-items: center;
-      padding: 4px 0 4px 10px;
+      padding: 4px 10px 4px 0;
       background-color: rgba($secondary-color, 0.7);
+      justify-content: flex-end;
 
       &--up {
-        flex-grow: 1;
         background-color: rgba($main-color, 0.7);
+        justify-content: flex-start;
+        padding: 4px 0 4px 10px;
       }
     }
 
@@ -109,5 +112,11 @@ $class-name: '.ruling-card';
       transform: rotate(180deg);
       margin-right: 8px;
     }
+  }
+
+  &__buttons-container {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
   }
 }

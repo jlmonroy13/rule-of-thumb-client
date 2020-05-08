@@ -1,0 +1,44 @@
+{
+  "rulings": [
+    {
+      "id": "1",
+      "name": "Kanye West",
+      "imageUrl": "assets/images/west.jpg",
+      "startDate": "2020/02/25",
+      "category": "Entertainment",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.",
+      "thumbsUp": 0,
+      "thumbsDown": 0
+    },
+    {
+      "id": "2",
+      "name": "Mark Zuckerberg",
+      "imageUrl": "assets/images/west.jpg",
+      "startDate": "2020/02/01",
+      "category": "Business",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.",
+      "thumbsUp": 64,
+      "thumbsDown": 13
+    },
+    {
+      "id": "3",
+      "name": "Cristina Fernández de Kirchner",
+      "imageUrl": "assets/images/west.jpg",
+      "startDate": "2020/01/30",
+      "category": "Politics",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.",
+      "thumbsUp": 50,
+      "thumbsDown": 50
+    },
+    {
+      "id": "4",
+      "name": "Malala Yousafzi",
+      "imageUrl": "assets/images/west.jpg",
+      "startDate": "2020/01/20",
+      "category": "Entertainment",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.",
+      "thumbsUp": 23,
+      "thumbsDown": 10
+    }
+  ]
+}

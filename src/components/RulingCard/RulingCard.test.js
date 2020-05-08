@@ -20,8 +20,8 @@ const props = {
   category: 'Entertaiment',
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.',
-  upThumbs: 64,
-  downThumbs: 36,
+  thumbsUp: 64,
+  thumbsDown: 36,
 };
 
 describe('<RulingCard />', () => {
