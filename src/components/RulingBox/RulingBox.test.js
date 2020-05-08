@@ -13,8 +13,9 @@ import RulingBox from './index';
 
 const props = {
   title: 'Pope Francis?',
-  description: 'He is talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)',
-  wikiUrl: 'https://en.wikipedia.org/wiki/Catholic_Church_sexual_abuse_cases'
+  description:
+    'He is talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)',
+  wikiUrl: 'https://en.wikipedia.org/wiki/Catholic_Church_sexual_abuse_cases',
 };
 
 describe('<RulingBox />', () => {
@@ -24,15 +25,6 @@ describe('<RulingBox />', () => {
     expect(spy).not.toHaveBeenCalled();
   });
 
-  it('Expect to have additional unit tests specified', () => {
-    expect(true).toEqual(true);
-  });
-
-  /**
-   * Unskip this test to use it
-   *
-   * @see {@link https://jestjs.io/docs/en/api#testskipname-fn}
-   */
   it('Should render and match the snapshot', () => {
     const {
       container: { firstChild },

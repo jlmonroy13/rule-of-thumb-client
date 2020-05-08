@@ -20,15 +20,6 @@ describe('<{{ properCase name }} />', () => {
     expect(spy).not.toHaveBeenCalled();
   });
 
-  it('Expect to have additional unit tests specified', () => {
-    expect(true).toEqual(true);
-  });
-
-  /**
-   * Unskip this test to use it
-   *
-   * @see {@link https://jestjs.io/docs/en/api#testskipname-fn}
-   */
   it('Should render and match the snapshot', () => {
     const {
       container: { firstChild },

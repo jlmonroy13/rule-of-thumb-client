@@ -1,6 +1,6 @@
 /**
  *
- * Tests for {{ properCase name }}
+ * Tests for InfoBox
  *
  * @see https://github.com/react-boilerplate/react-boilerplate/tree/master/docs/testing
  *
@@ -9,21 +9,21 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import {{ properCase name }} from './index';
+import InfoBox from './index';
 
 const props = {};
 
-describe('<{{ properCase name }} />', () => {
+describe('<InfoBox />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error');
-    render(<{{ properCase name }} {...props} />);
+    render(<InfoBox {...props} />);
     expect(spy).not.toHaveBeenCalled();
   });
 
   it('Should render and match the snapshot', () => {
     const {
       container: { firstChild },
-    } = render(<{{ properCase name }} {...props} />);
+    } = render(<InfoBox {...props} />);
     expect(firstChild).toMatchSnapshot();
   });
 });
