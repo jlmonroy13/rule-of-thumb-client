@@ -8,14 +8,12 @@ export const isNilOrEmpty = (value) =>
 
 export const hasValue = compose(not, isNilOrEmpty);
 
-const defaultThumbsPercentages = {
-  upPercentage: 0,
-  downPercentage: 0,
-};
-
 export const calculatePercentages = ({ thumbsUp, thumbsDown }) => {
   if (isNilOrEmpty(thumbsUp) && isNilOrEmpty(thumbsDown)) {
-    return defaultThumbsPercentages;
+    return {
+      upPercentage: 0,
+      downPercentage: 0,
+    };
   }
 
   if (hasValue(thumbsUp) && isNilOrEmpty(thumbsDown)) {

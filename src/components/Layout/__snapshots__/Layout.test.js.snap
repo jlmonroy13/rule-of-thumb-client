@@ -299,6 +299,7 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
       >
         <div
           class="info-box"
+          data-testid="info-box"
         >
           <div
             class="info-box__container"
@@ -325,6 +326,7 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
           </div>
           <button
             class="info-box__button"
+            data-testid="info-box-close-button"
           >
             ✕
           </button>
@@ -375,10 +377,12 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                   class="text-small mb-3 d-block"
                 >
                   <b>
-                    2020/02/25
+                    2 months
+                     ago
                   </b>
-                   in 
-                  Entertaiment
+                   in
+                   
+                  Entertainment
                 </span>
                 <p
                   class="ruling-card__description"
@@ -386,10 +390,11 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.
                 </p>
                 <div
-                  class="d-flex align-items-center"
+                  class="ruling-card__buttons-container"
                 >
                   <button
-                    class="ruling-card__thumb-btn mr-2"
+                    class="ruling-card__thumb-btn mr-2 "
+                    data-testid="thumb-up-button"
                   >
                     <svg
                       class="icon icon-thumb ruling-card__thumb ruling-card__thumb--up"
@@ -401,7 +406,8 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                     </svg>
                   </button>
                   <button
-                    class="ruling-card__thumb-btn mr-3"
+                    class="ruling-card__thumb-btn mr-3 "
+                    data-testid="thumb-down-button"
                   >
                     <svg
                       class="icon icon-thumb ruling-card__thumb"
@@ -414,8 +420,10 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                   </button>
                   <button
                     class="ruling-card__button"
+                    data-testid="vote-button"
                   >
-                    Vote now
+                    Vote 
+                    now
                   </button>
                 </div>
               </div>
@@ -424,6 +432,7 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
               >
                 <div
                   class="ruling-card__footer-percentage ruling-card__footer-percentage--up"
+                  style="width: 0%;"
                 >
                   <svg
                     class="icon icon-thumb ruling-card__footer-icon"
@@ -434,22 +443,20 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                     />
                   </svg>
                   <span>
-                    64
+                    0
                     %
                   </span>
                 </div>
                 <div
                   class="ruling-card__footer-percentage"
-                  style="width: 36%;"
+                  style="width: 0%;"
                 >
-                  <span
-                    class="mr-2"
-                  >
-                    36
+                  <span>
+                    0
                     %
                   </span>
                   <svg
-                    class="icon icon-thumb "
+                    class="icon icon-thumb ml-2"
                     data-testid="icon-component"
                   >
                     <use
@@ -465,7 +472,7 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
           >
             <div
               class="ruling-card"
-              style="background-image: url(west.jpg);"
+              style="background-image: url(zuckerberg.jpg);"
             >
               <div
                 class="ruling-card__mask"
@@ -491,17 +498,19 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                   <h2
                     class="ruling-card__title"
                   >
-                    Kanye West
+                    Mark Zuckerberg
                   </h2>
                 </div>
                 <span
                   class="text-small mb-3 d-block"
                 >
                   <b>
-                    2020/02/25
+                    3 months
+                     ago
                   </b>
-                   in 
-                  Entertaiment
+                   in
+                   
+                  Business
                 </span>
                 <p
                   class="ruling-card__description"
@@ -509,10 +518,11 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.
                 </p>
                 <div
-                  class="d-flex align-items-center"
+                  class="ruling-card__buttons-container"
                 >
                   <button
-                    class="ruling-card__thumb-btn mr-2"
+                    class="ruling-card__thumb-btn mr-2 "
+                    data-testid="thumb-up-button"
                   >
                     <svg
                       class="icon icon-thumb ruling-card__thumb ruling-card__thumb--up"
@@ -524,7 +534,8 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                     </svg>
                   </button>
                   <button
-                    class="ruling-card__thumb-btn mr-3"
+                    class="ruling-card__thumb-btn mr-3 "
+                    data-testid="thumb-down-button"
                   >
                     <svg
                       class="icon icon-thumb ruling-card__thumb"
@@ -537,8 +548,10 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                   </button>
                   <button
                     class="ruling-card__button"
+                    data-testid="vote-button"
                   >
-                    Vote now
+                    Vote 
+                    now
                   </button>
                 </div>
               </div>
@@ -547,6 +560,7 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
               >
                 <div
                   class="ruling-card__footer-percentage ruling-card__footer-percentage--up"
+                  style="width: 60%;"
                 >
                   <svg
                     class="icon icon-thumb ruling-card__footer-icon"
@@ -557,22 +571,20 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                     />
                   </svg>
                   <span>
-                    64
+                    60
                     %
                   </span>
                 </div>
                 <div
                   class="ruling-card__footer-percentage"
-                  style="width: 36%;"
+                  style="width: 40%;"
                 >
-                  <span
-                    class="mr-2"
-                  >
-                    36
+                  <span>
+                    40
                     %
                   </span>
                   <svg
-                    class="icon icon-thumb "
+                    class="icon icon-thumb ml-2"
                     data-testid="icon-component"
                   >
                     <use
@@ -588,7 +600,7 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
           >
             <div
               class="ruling-card"
-              style="background-image: url(west.jpg);"
+              style="background-image: url(kirchner.jpg);"
             >
               <div
                 class="ruling-card__mask"
@@ -614,17 +626,19 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                   <h2
                     class="ruling-card__title"
                   >
-                    Kanye West
+                    Cristina Fernández de Kirchner
                   </h2>
                 </div>
                 <span
                   class="text-small mb-3 d-block"
                 >
                   <b>
-                    2020/02/25
+                    3 months
+                     ago
                   </b>
-                   in 
-                  Entertaiment
+                   in
+                   
+                  Politics
                 </span>
                 <p
                   class="ruling-card__description"
@@ -632,10 +646,11 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.
                 </p>
                 <div
-                  class="d-flex align-items-center"
+                  class="ruling-card__buttons-container"
                 >
                   <button
-                    class="ruling-card__thumb-btn mr-2"
+                    class="ruling-card__thumb-btn mr-2 "
+                    data-testid="thumb-up-button"
                   >
                     <svg
                       class="icon icon-thumb ruling-card__thumb ruling-card__thumb--up"
@@ -647,7 +662,8 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                     </svg>
                   </button>
                   <button
-                    class="ruling-card__thumb-btn mr-3"
+                    class="ruling-card__thumb-btn mr-3 "
+                    data-testid="thumb-down-button"
                   >
                     <svg
                       class="icon icon-thumb ruling-card__thumb"
@@ -660,8 +676,10 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                   </button>
                   <button
                     class="ruling-card__button"
+                    data-testid="vote-button"
                   >
-                    Vote now
+                    Vote 
+                    now
                   </button>
                 </div>
               </div>
@@ -670,6 +688,7 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
               >
                 <div
                   class="ruling-card__footer-percentage ruling-card__footer-percentage--up"
+                  style="width: 50%;"
                 >
                   <svg
                     class="icon icon-thumb ruling-card__footer-icon"
@@ -680,22 +699,20 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                     />
                   </svg>
                   <span>
-                    64
+                    50
                     %
                   </span>
                 </div>
                 <div
                   class="ruling-card__footer-percentage"
-                  style="width: 36%;"
+                  style="width: 50%;"
                 >
-                  <span
-                    class="mr-2"
-                  >
-                    36
+                  <span>
+                    50
                     %
                   </span>
                   <svg
-                    class="icon icon-thumb "
+                    class="icon icon-thumb ml-2"
                     data-testid="icon-component"
                   >
                     <use
@@ -711,7 +728,7 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
           >
             <div
               class="ruling-card"
-              style="background-image: url(west.jpg);"
+              style="background-image: url(yousafzai.png);"
             >
               <div
                 class="ruling-card__mask"
@@ -737,17 +754,19 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                   <h2
                     class="ruling-card__title"
                   >
-                    Kanye West
+                    Malala Yousafzai
                   </h2>
                 </div>
                 <span
                   class="text-small mb-3 d-block"
                 >
                   <b>
-                    2020/02/25
+                    4 months
+                     ago
                   </b>
-                   in 
-                  Entertaiment
+                   in
+                   
+                  Entertainment
                 </span>
                 <p
                   class="ruling-card__description"
@@ -755,10 +774,11 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.
                 </p>
                 <div
-                  class="d-flex align-items-center"
+                  class="ruling-card__buttons-container"
                 >
                   <button
-                    class="ruling-card__thumb-btn mr-2"
+                    class="ruling-card__thumb-btn mr-2 "
+                    data-testid="thumb-up-button"
                   >
                     <svg
                       class="icon icon-thumb ruling-card__thumb ruling-card__thumb--up"
@@ -770,7 +790,8 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                     </svg>
                   </button>
                   <button
-                    class="ruling-card__thumb-btn mr-3"
+                    class="ruling-card__thumb-btn mr-3 "
+                    data-testid="thumb-down-button"
                   >
                     <svg
                       class="icon icon-thumb ruling-card__thumb"
@@ -783,8 +804,10 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                   </button>
                   <button
                     class="ruling-card__button"
+                    data-testid="vote-button"
                   >
-                    Vote now
+                    Vote 
+                    now
                   </button>
                 </div>
               </div>
@@ -793,6 +816,7 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
               >
                 <div
                   class="ruling-card__footer-percentage ruling-card__footer-percentage--up"
+                  style="width: 25%;"
                 >
                   <svg
                     class="icon icon-thumb ruling-card__footer-icon"
@@ -803,22 +827,20 @@ exports[`<Layout /> Should render and match the snapshot 1`] = `
                     />
                   </svg>
                   <span>
-                    64
+                    25
                     %
                   </span>
                 </div>
                 <div
                   class="ruling-card__footer-percentage"
-                  style="width: 36%;"
+                  style="width: 75%;"
                 >
-                  <span
-                    class="mr-2"
-                  >
-                    36
+                  <span>
+                    75
                     %
                   </span>
                   <svg
-                    class="icon icon-thumb "
+                    class="icon icon-thumb ml-2"
                     data-testid="icon-component"
                   >
                     <use

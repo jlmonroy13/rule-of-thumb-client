@@ -36,9 +36,11 @@ exports[`<RulingCard /> Should render and match the snapshot 1`] = `
       class="text-small mb-3 d-block"
     >
       <b>
-        2020/02/25
+        2 months
+         ago
       </b>
-       in 
+       in
+       
       Entertaiment
     </span>
     <p
@@ -47,10 +49,11 @@ exports[`<RulingCard /> Should render and match the snapshot 1`] = `
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.
     </p>
     <div
-      class="d-flex align-items-center"
+      class="ruling-card__buttons-container"
     >
       <button
-        class="ruling-card__thumb-btn mr-2"
+        class="ruling-card__thumb-btn mr-2 "
+        data-testid="thumb-up-button"
       >
         <svg
           class="icon icon-thumb ruling-card__thumb ruling-card__thumb--up"
@@ -62,7 +65,8 @@ exports[`<RulingCard /> Should render and match the snapshot 1`] = `
         </svg>
       </button>
       <button
-        class="ruling-card__thumb-btn mr-3"
+        class="ruling-card__thumb-btn mr-3 "
+        data-testid="thumb-down-button"
       >
         <svg
           class="icon icon-thumb ruling-card__thumb"
@@ -75,8 +79,10 @@ exports[`<RulingCard /> Should render and match the snapshot 1`] = `
       </button>
       <button
         class="ruling-card__button"
+        data-testid="vote-button"
       >
-        Vote now
+        Vote 
+        now
       </button>
     </div>
   </div>
@@ -85,6 +91,7 @@ exports[`<RulingCard /> Should render and match the snapshot 1`] = `
   >
     <div
       class="ruling-card__footer-percentage ruling-card__footer-percentage--up"
+      style="width: 64%;"
     >
       <svg
         class="icon icon-thumb ruling-card__footer-icon"
@@ -103,14 +110,12 @@ exports[`<RulingCard /> Should render and match the snapshot 1`] = `
       class="ruling-card__footer-percentage"
       style="width: 36%;"
     >
-      <span
-        class="mr-2"
-      >
+      <span>
         36
         %
       </span>
       <svg
-        class="icon icon-thumb "
+        class="icon icon-thumb ml-2"
         data-testid="icon-component"
       >
         <use

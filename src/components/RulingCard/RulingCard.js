@@ -89,6 +89,7 @@ const RulingCard = ({
                   isUpSelected ? 'is-active' : ''
                 }`}
                 onClick={onSetThumbUp}
+                data-testid="thumb-up-button"
               >
                 <Icon
                   name="thumb"
@@ -96,6 +97,7 @@ const RulingCard = ({
                 />
               </button>
               <button
+                data-testid="thumb-down-button"
                 onClick={onSetThumbDown}
                 className={`ruling-card__thumb-btn mr-3 ${
                   isDownSelected ? 'is-active' : ''
@@ -113,7 +115,6 @@ const RulingCard = ({
             Vote {wasVoted ? 'again' : 'now'}
           </button>
         </div>
-        {thumbsUp} - {thumbsDown}
       </div>
       <div className="ruling-card__footer">
         <div

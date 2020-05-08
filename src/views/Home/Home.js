@@ -8,7 +8,7 @@ import InfoBox from 'components/InfoBox';
 import RulingCard from 'components/RulingCard';
 import Layout from 'components/Layout';
 
-import data from 'constants/data.json';
+import data from 'constants/data';
 
 const Home = () => {
   const [showInfoBox, setShowInfoBox] = useState(true);

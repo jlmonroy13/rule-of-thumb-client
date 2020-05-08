@@ -3,6 +3,7 @@
 exports[`<InfoBox /> Should render and match the snapshot 1`] = `
 <div
   class="info-box"
+  data-testid="info-box"
 >
   <div
     class="info-box__container"
@@ -29,6 +30,7 @@ exports[`<InfoBox /> Should render and match the snapshot 1`] = `
   </div>
   <button
     class="info-box__button"
+    data-testid="info-box-close-button"
   >
     ✕
   </button>
