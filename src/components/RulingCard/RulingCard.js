@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { equals, gt, not, isEmpty } from 'ramda';
+import { equals, gt, not, isEmpty, lte } from 'ramda';
 import { formatDistance } from 'date-fns';
 
 import Icon from 'components/Icon';
@@ -72,7 +72,12 @@ const RulingCard = ({
       <div className="ruling-card__body">
         <div className="position-relative">
           <span className="ruling-card__icon">
-            <Icon name="thumb" className="ruling-card__thumb" />
+            <Icon
+              name="thumb"
+              className={`ruling-card__thumb ${
+                lte(thumbsDown, thumbsUp) ? 'ruling-card__thumb--up' : ''
+              }`}
+            />
           </span>
           <h2 className="ruling-card__title">{name}</h2>
         </div>
