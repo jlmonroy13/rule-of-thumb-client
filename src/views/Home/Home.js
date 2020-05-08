@@ -5,6 +5,7 @@ import RulingBox from 'components/RulingBox';
 import ProgressBar from 'components/ProgressBar';
 import InfoBox from 'components/InfoBox';
 import RulingCard from 'components/RulingCard';
+import Footer from 'components/Footer';
 
 import kanyePhoto from 'assets/images/west.jpg';
 
@@ -83,8 +84,8 @@ const Home = () => {
           <ProgressBar label="closing in" value={22} valueLabel="days" />
         </div>
       </section>
-      <div className="container">
-        <section className="home__rulings">
+      <section className="home__rulings">
+        <div className="container">
           {showInfoBox && (
             <InfoBox
               title="Be counted"
@@ -102,8 +103,9 @@ const Home = () => {
             </p>
             <button className="home__advise-btn">Submit a Name</button>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 };
