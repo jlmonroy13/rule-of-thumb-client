@@ -1,0 +1,39 @@
+input,
+button,
+select,
+textarea {
+  border: none;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include media-breakpoint-down(md) {
+    overflow: initial;
+  }
+}
+
+input[type='checkbox'] {
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.container {
+  padding-right: 25px;
+  padding-left: 25px;
+}

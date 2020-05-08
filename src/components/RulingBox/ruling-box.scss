@@ -1,0 +1,72 @@
+.ruling-box {
+  background-color: rgba($black, 0.3);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px 60px 30px 30px;
+  color: $white;
+  position: relative;
+  bottom: 80px;
+  max-width: 500px;
+
+  &__title {
+    @include font-size(60);
+
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    @include font-size(21);
+
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  &__link {
+    @include font-size(14);
+
+    color: $white;
+    text-decoration: underline;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__buttons {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    flex-basis: 0;
+    flex-grow: 1;
+    background-color: rgba($main-color, 0.9);
+    padding: 20px 0;
+
+    &:hover {
+      background-color: rgba($main-color, 1);
+    }
+
+    &--yellow {
+      background-color: rgba($secondary-color, 0.9);
+
+      &:hover {
+        background-color: rgba($secondary-color, 1);
+      }
+    }
+  }
+
+  &__icon {
+    @include font-size(40);
+
+    &--up {
+      transform: rotate(180deg);
+    }
+  }
+}

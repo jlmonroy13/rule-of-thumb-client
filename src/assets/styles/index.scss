@@ -1,0 +1,24 @@
+// Settings
+@import 'settings/variables';
+
+// Bootstrap library
+@import 'bootstrap/scss/bootstrap.scss';
+
+// Core
+@import 'core/core';
+@import 'core/fonts';
+
+// Components
+@import '../../components/Icon/icon.scss';
+@import '../../components/Header/header.scss';
+@import '../../components/RulingBox/ruling-box.scss';
+@import '../../components/ProgressBar/progress-bar.scss';
+@import '../../components/InfoBox/info-box.scss';
+@import '../../components/RulingCard/ruling-card.scss';
+@import '../../components/Footer/footer.scss';
+
+// Views
+@import '../../views/Home/home.scss';
+
+// Helpers
+@import 'helpers/helpers';

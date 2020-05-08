@@ -1,0 +1,83 @@
+$font-sizes: () !default;
+$font-sizes: map-merge(
+  (
+    'xsmaller': $font-size-xsmaller,
+    'xsmall': $font-size-xsmall,
+    'smaller': $font-size-smaller,
+    'small': $font-size-small,
+    'base': $font-size-base,
+    'large': $font-size-large,
+    'larger': $font-size-larger,
+  ),
+  $font-sizes
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $size, $value in $font-sizes {
+      .text#{$infix}-#{$size} {
+        font-size: #{$value};
+      }
+    }
+  }
+}
+
+$custom-colors: () !default;
+$custom-colors: map-merge(
+  (
+    'white': $white,
+    'black': $black,
+    'transparent': $transparent,
+    'main-color': $main-color,
+    'secondary-color': $secondary-color,
+    'gallery': $gallery,
+    'mine-shaft': $mine-shaft,
+    'dove-gray': $dove-gray,
+  ),
+  $custom-colors
+);
+
+@each $color, $value in $custom-colors {
+  .link-#{$color} {
+    color: #{$value};
+
+    &:hover {
+      color: darken($value, 15%);
+    }
+  }
+}
+
+@each $color, $value in $custom-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $color, $value in $custom-colors {
+      @include text-emphasis-variant('.text#{$infix}-#{$color}', $value);
+    }
+  }
+}
+
+@each $color, $value in $custom-colors {
+  @include bg-variant('.bg-#{$color}', $value);
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+.flex-basis-0 {
+  flex-basis: 0;
+}
+
+.border-none {
+  border: none;
+}

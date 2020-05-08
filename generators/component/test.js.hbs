@@ -1,0 +1,29 @@
+/**
+ *
+ * Tests for {{ properCase name }}
+ *
+ * @see https://github.com/react-boilerplate/react-boilerplate/tree/master/docs/testing
+ *
+ */
+
+import React from 'react';
+import { render } from '@testing-library/react';
+
+import {{ properCase name }} from './index';
+
+const props = {};
+
+describe('<{{ properCase name }} />', () => {
+  it('Expect to not log errors in console', () => {
+    const spy = jest.spyOn(global.console, 'error');
+    render(<{{ properCase name }} {...props} />);
+    expect(spy).not.toHaveBeenCalled();
+  });
+
+  it('Should render and match the snapshot', () => {
+    const {
+      container: { firstChild },
+    } = render(<{{ properCase name }} {...props} />);
+    expect(firstChild).toMatchSnapshot();
+  });
+});

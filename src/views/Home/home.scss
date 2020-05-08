@@ -1,0 +1,87 @@
+.home {
+  &__main {
+    height: 100vh;
+    background-image: url('../../assets/images/pope.jpg');
+    background-size: cover;
+    position: relative;
+    padding-top: 86px;
+    display: flex;
+    align-items: center;
+
+    &-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &__rulings {
+    padding: 30px 0;
+
+    &-title {
+      @include font-size(40);
+
+      font-weight: 300;
+    }
+  }
+
+  &__advise {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-image: url('../../assets/images/crowd.jpg');
+    background-position: 10px;
+    position: relative;
+    margin: 20px 0 25px;
+
+    &-mask {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba($white, 0.8);
+      z-index: 1;
+    }
+
+    &-text {
+      @include font-size(30);
+
+      margin: 0;
+      font-weight: 300;
+      z-index: 2;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        @include font-size(25);
+
+        text-align: center;
+      }
+    }
+
+    &-btn {
+      @include font-size(20);
+
+      color: $mine-shaft;
+      border: 3px solid $mine-shaft;
+      padding: 10px 30px;
+      z-index: 2;
+
+      &:hover {
+        transition: all 0.2s;
+        color: $white;
+        background-color: $mine-shaft;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }
+}
