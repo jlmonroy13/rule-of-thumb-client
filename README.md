@@ -2,13 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-You can check the project online in this url (http://rule-of-thumb.surge.sh/).
+You can check the project online in this url http://rule-of-thumb.surge.sh/.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn``
+### `yarn`
 
 Install project dependencies
 
@@ -35,10 +35,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### 'yarn generate component``
+### `yarn generate component`
 
 Create a folder structure component inside `src/components` with `index.js, Component.js. component.scss and component.test.js`
 
-### 'yarn generate view``
+### `yarn generate view`
 
 Create a folder structure view inside `src/views` with `index.js, View.js. view.scss and view.test.js`
