@@ -57,18 +57,19 @@ $class-name: '.ruling-card';
     padding: 5px;
     background-color: $secondary-color;
 
+    &-btn {
+      padding: 0;
+      border: 2px solid $transparent;
+
+      &:hover,
+      &.is-active {
+        border: 2px solid $white;
+      }
+    }
+
     &--up {
       background-color: $main-color;
       transform: rotate(180deg);
-    }
-  }
-
-  &__thumb-btn {
-    padding: 0;
-    border: 2px solid $transparent;
-
-    &:hover {
-      border: 2px solid $white;
     }
   }
 
