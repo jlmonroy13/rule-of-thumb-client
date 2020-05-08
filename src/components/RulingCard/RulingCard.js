@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { equals, gt, not, isEmpty } from 'ramda';
+import { formatDistance } from 'date-fns';
 
 import Icon from 'components/Icon';
 
 import { SUCCESS, ERROR } from 'constants/notificationTypes';
+import { UP, DOWN } from 'constants/thumbsTypes';
 
 import showNotification from 'utils/showNotification';
 
-import { calculatePercentages, setPercentageWidth } from 'utils/utils';
-
-const UP = 'up';
-const DOWN = 'down';
+import { calculatePercentages, addVote } from 'utils/utils';
 
 const RulingCard = ({
+  id,
   name,
   imageUrl,
   startDate,
@@ -21,6 +21,7 @@ const RulingCard = ({
   description,
   thumbsUp,
   thumbsDown,
+  onSetVote,
 }) => {
   const [selectedThumb, setSelectedThumb] = useState('');
   const [wasVoted, setWasVoted] = useState(false);
@@ -54,6 +55,11 @@ const RulingCard = ({
       message: 'Thank you for voting!',
     });
 
+    const voteData = addVote({ selectedThumb, thumbsUp, thumbsDown });
+
+    onSetVote({ id, ...voteData });
+    setSelectedThumb('');
+
     return setWasVoted(true);
   };
 
@@ -71,7 +77,8 @@ const RulingCard = ({
           <h2 className="ruling-card__title">{name}</h2>
         </div>
         <span className="text-small mb-3 d-block">
-          <b>{startDate}</b> in {category}
+          <b>{formatDistance(new Date(), new Date(startDate))} ago</b> in{' '}
+          {category}
         </span>
         <p className="ruling-card__description">{description}</p>
         <div className="ruling-card__buttons-container">
@@ -98,22 +105,27 @@ const RulingCard = ({
               </button>
             </>
           )}
-          <button onClick={onVote} className="ruling-card__button">
+          <button
+            onClick={onVote}
+            className="ruling-card__button"
+            data-testid="vote-button"
+          >
             Vote {wasVoted ? 'again' : 'now'}
           </button>
         </div>
+        {thumbsUp} - {thumbsDown}
       </div>
       <div className="ruling-card__footer">
         <div
           className="ruling-card__footer-percentage ruling-card__footer-percentage--up"
-          style={{ width: `${setPercentageWidth(upPercentage)}%` }}
+          style={{ width: `${upPercentage}%` }}
         >
           <Icon name="thumb" className="ruling-card__footer-icon" />
           {formatValue(upPercentage)}
         </div>
         <div
           className="ruling-card__footer-percentage"
-          style={{ width: `${setPercentageWidth(downPercentage)}%` }}
+          style={{ width: `${downPercentage}%` }}
         >
           {formatValue(downPercentage)}
           <Icon name="thumb" className="ml-2" />
@@ -124,6 +136,7 @@ const RulingCard = ({
 };
 
 RulingCard.propTypes = {
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   startDate: PropTypes.string.isRequired,
@@ -131,6 +144,7 @@ RulingCard.propTypes = {
   description: PropTypes.string.isRequired,
   thumbsUp: PropTypes.number.isRequired,
   thumbsDown: PropTypes.number.isRequired,
+  onSetVote: PropTypes.func.isRequired,
 };
 
 export default RulingCard;

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useStorageState } from 'react-storage-hooks';
+import { equals } from 'ramda';
 
 import RulingBox from 'components/RulingBox';
 import ProgressBar from 'components/ProgressBar';
@@ -8,17 +10,35 @@ import Layout from 'components/Layout';
 
 import data from 'constants/data.json';
 
-const { rulings } = data;
-
 const Home = () => {
   const [showInfoBox, setShowInfoBox] = useState(true);
+  const [rulings, setRulings] = useStorageState(
+    localStorage,
+    'rulings',
+    data.rulings,
+  );
 
   const onCloseInfoBox = () => setShowInfoBox(false);
 
-  // eslint-disable-next-line react/prop-types
-  const onRenderRulings = ({ id, ...props }) => (
-    <div key={id} className="col-lg-6">
-      <RulingCard {...props} />
+  const updateRulingsArray = ({ id, ...voteData }) => (ruling) => {
+    if (equals(id, ruling.id)) {
+      return {
+        ...ruling,
+        ...voteData,
+      };
+    }
+
+    return ruling;
+  };
+
+  const onSetVote = (voteData) => {
+    const updatedRulings = rulings.map(updateRulingsArray(voteData));
+    setRulings(updatedRulings);
+  };
+
+  const onRenderRulings = (ruling) => (
+    <div key={ruling.id} className="col-lg-6">
+      <RulingCard {...ruling} onSetVote={onSetVote} />
     </div>
   );
 

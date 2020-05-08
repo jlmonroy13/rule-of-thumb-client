@@ -1,5 +1,7 @@
 /* eslint-disable radix */
-import { isNil, isEmpty, compose, not, equals } from 'ramda';
+import { isNil, isEmpty, compose, not, equals, inc } from 'ramda';
+
+import { UP } from 'constants/thumbsTypes';
 
 export const isNilOrEmpty = (value) =>
   isNil(value) || isEmpty(value) || equals(value, 0);
@@ -17,11 +19,11 @@ export const calculatePercentages = ({ thumbsUp, thumbsDown }) => {
   }
 
   if (hasValue(thumbsUp) && isNilOrEmpty(thumbsDown)) {
-    return { ...defaultThumbsPercentages, upPercentage: 100 };
+    return { downPercentage: 0, upPercentage: 100 };
   }
 
   if (hasValue(thumbsDown) && isNilOrEmpty(thumbsUp)) {
-    return { ...defaultThumbsPercentages, downPercentage: 100 };
+    return { upPercentage: 0, downPercentage: 100 };
   }
 
   const totalThumbs = thumbsUp + thumbsDown;
@@ -34,8 +36,13 @@ export const calculatePercentages = ({ thumbsUp, thumbsDown }) => {
   };
 };
 
-export const setPercentageWidth = (percentage) => {
-  if (equals(percentage, 0)) return 50;
+export const addVote = ({ selectedThumb, thumbsUp, thumbsDown }) => {
+  const updatedThumbsUp = inc(thumbsUp);
+  const updatedThumbsDown = inc(thumbsDown);
 
-  return percentage;
+  return {
+    [selectedThumb]: equals(UP, selectedThumb)
+      ? updatedThumbsUp
+      : updatedThumbsDown,
+  };
 };
