@@ -4,11 +4,68 @@ import Header from 'components/Header';
 import RulingBox from 'components/RulingBox';
 import ProgressBar from 'components/ProgressBar';
 import InfoBox from 'components/InfoBox';
+import RulingCard from 'components/RulingCard';
+
+import kanyePhoto from 'assets/images/west.jpg';
+
+const rulings = [
+  {
+    id: '1',
+    name: 'Kanye West',
+    imageUrl: kanyePhoto,
+    startDate: '2020/02/25',
+    category: 'Entertaiment',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.',
+    upThumbs: 64,
+    downThumbs: 36,
+  },
+  {
+    id: '2',
+    name: 'Kanye West',
+    imageUrl: kanyePhoto,
+    startDate: '2020/02/25',
+    category: 'Entertaiment',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.',
+    upThumbs: 64,
+    downThumbs: 36,
+  },
+  {
+    id: '3',
+    name: 'Kanye West',
+    imageUrl: kanyePhoto,
+    startDate: '2020/02/25',
+    category: 'Entertaiment',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.',
+    upThumbs: 64,
+    downThumbs: 36,
+  },
+  {
+    id: '4',
+    name: 'Kanye West',
+    imageUrl: kanyePhoto,
+    startDate: '2020/02/25',
+    category: 'Entertaiment',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates magnam excepturi libero ipsum ipsa eligendi voluptate praesentium.',
+    upThumbs: 64,
+    downThumbs: 36,
+  },
+];
 
 const Home = () => {
   const [showInfoBox, setShowInfoBox] = useState(true);
 
   const onCloseInfoBox = () => setShowInfoBox(false);
+
+  // eslint-disable-next-line react/prop-types
+  const onRenderRulings = ({ id, ...props }) => (
+    <div key={id} className="col-lg-6">
+      <RulingCard {...props} />
+    </div>
+  );
 
   return (
     <div className="position-relative">
@@ -36,7 +93,8 @@ const Home = () => {
               onClose={onCloseInfoBox}
             />
           )}
-          <h1 className="home__votes-title">Previous Rulings</h1>
+          <h1 className="home__votes-title mb-5">Previous Rulings</h1>
+          <div className="row">{rulings.map(onRenderRulings)}</div>
         </section>
       </div>
     </div>
