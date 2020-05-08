@@ -43,6 +43,48 @@
       &:hover {
         color: $white;
       }
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 15px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      justify-content: unset;
+      padding-top: 20px;
+      position: fixed;
+      top: 0;
+      right: -160px;
+      width: 160px;
+      height: 100vh;
+      background-color: rgba($mine-shaft, 0.5);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: right 0.5s;
+
+      &.is-active {
+        right: 0;
+      }
+    }
+  }
+
+  &__hamburger {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+
+    &-line {
+      height: 3px;
+      border-radius: 6px;
+      width: 100%;
+      background-color: $white;
+      display: inline-block;
     }
   }
 

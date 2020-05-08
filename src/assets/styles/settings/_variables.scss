@@ -6,6 +6,8 @@ $black: #000;
 $white: #fff;
 $java: #1cbbb4;
 $my-sin: #ffac1d;
+$gallery: #ebebeb;
+$mine-shaft: #333;
 
 $border-radius: 0.25rem;
 
@@ -19,7 +21,7 @@ $secondary-color: $my-sin;
 
 //Body
 $body-bg: $white !default;
-$body-color: $black !default;
+$body-color: $mine-shaft !default;
 
 // Fonts
 $font-family-sans-serif: 'Lato', 'Helvetica Neue', helvetica, arial,
